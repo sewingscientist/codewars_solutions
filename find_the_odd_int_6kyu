@@ -1,0 +1,6 @@
+def find_it(seq):
+    count = 0
+    for num in seq:
+        num_count = seq.count(num)
+        if num_count % 2 == 1:
+            return num
