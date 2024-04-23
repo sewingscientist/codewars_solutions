@@ -1,0 +1,9 @@
+def generate_hashtag(s):
+    stripped = s.strip().title()
+    first_char = '#'
+    new_sentence = first_char + stripped
+    final = ''.join(new_sentence.split())
+    if final == "" or len(final) > 140 or final == '#':
+        return False
+    else:
+        return final
