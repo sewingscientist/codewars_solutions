@@ -9,24 +9,3 @@ A string representation of an integer will contain no characters besides the ten
 Python: your solution need to work with huge numbers (about a milion digits), converting to int will not work.
 """
 
-
-# SOLUTION
-
-def sum_strings(x, y):
-    if len(x) and len(y) < 4000:
-        return str(int(x) + int(y))
-    else:
-        for num in x:
-            total_x = 0
-            num_string = num + (len(x-1) * "0")
-            total_x += int(num_string)
-
-        for num in y:
-            total_y = 0
-            num_string = num + (len(x - 1) * "0")
-            total_y += int(num_string)
-            
-            sum_of_string = total_x + total_y
-
-        return str(sum_of_string)
-
